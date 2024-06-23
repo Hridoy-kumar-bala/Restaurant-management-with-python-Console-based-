@@ -62,7 +62,7 @@ def Admin_manu():
             item_price = int(input('enter item PRICE: '))
             item_quantity = int(input('enter item quantity: '))
             item = Fooditem(item_name,item_price,item_quantity)
-            admin.add_new_item(mamar_restaurant,item)
+            Admin.add_new_item(mamar_restaurant,item)
         elif choice==2:
             name = input("Enter employee Name: ")
             phone = input("Enter employee phone:")
@@ -71,7 +71,7 @@ def Admin_manu():
             designation = input("Enter employee designation: ")
             age = input("Enter employee age:")
             salary  = input("Enter employee salary:")
-            admin.add_employee(name, phone, email, address,age,designation,salary)
+            Admin.add_employee(name, phone, email, address,age,designation,salary)
 
         elif choice ==3:
             Admin.view_employee(mamar_restaurant)
