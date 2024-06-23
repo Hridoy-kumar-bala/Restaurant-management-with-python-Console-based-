@@ -12,5 +12,5 @@ class Restaurent:
 
     def view_employee_list(self):
         print(f'Employee list!!')
-        for emp in self.employee:
+        for emp in self.employees:
             print(emp.name,emp.email,emp.phone,emp.address)
