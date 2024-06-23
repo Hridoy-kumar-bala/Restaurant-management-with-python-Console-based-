@@ -4,7 +4,8 @@ from order import order
 from restaurant import Restaurent
 from user_panel import Customer,admin,Employee
 
-mamar_restaurant= Restaurent("Mamar Restaurant")
+            employee =Employee(name, email, phone, address,age, designation, salary)
+= Restaurent("Mamar Restaurant")
 def coustomar_manu():
     name = input("Enter Your Name: ")
     email = input("Enter the email: ")
@@ -71,15 +72,15 @@ def Admin_manu():
             designation = input("Enter employee designation: ")
             age = input("Enter employee age:")
             salary  = input("Enter employee salary:")
-            Admin.add_employee(name, phone, email, address,age,designation,salary)
-
+            employee =Employee(name, email, phone, address,age, designation, salary)
+            Admin.add_employee(mamar_restaurant,employee)
         elif choice ==3:
             Admin.view_employee(mamar_restaurant)
         elif choice==4:
             Admin.view_manu(mamar_restaurant)
         elif choice == 5:
             item_name = input("Enter your item Name : ")
-            Admin.remove_item(mamar_restaurant,item_name)
+            Admin.delete_item(mamar_restaurant,item_name)
         elif choice==6:
             break
         else:
